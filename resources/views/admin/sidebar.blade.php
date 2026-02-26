@@ -25,6 +25,22 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
+        Petcare
+    </div>
+
+    <!-- Nav Item - Patients -->
+    <li class="nav-item {{ request()->routeIs('admin.patients.*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.patients.index') }}">
+            <i class="fas fa-fw fa-paw"></i>
+            <span>Patients</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
         Interface
     </div>
 
